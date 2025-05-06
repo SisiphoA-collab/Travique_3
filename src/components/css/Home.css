@@ -1,0 +1,61 @@
+/* src/css/Home.css */
+.home-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  .widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .widget {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .widget:hover {
+    transform: translateY(-5px);
+  }
+  
+  .widget-icon {
+    font-size: 2.5rem;
+    color: #246071;
+    margin-bottom: 10px;
+  }
+  
+  .widget h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .widget p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .get-started-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 30px;
+    background-color: #246071;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #1b4a58;
+  }
+  

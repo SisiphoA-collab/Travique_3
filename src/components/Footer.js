@@ -13,7 +13,8 @@ const styles = {
     textAlign: 'center',
     padding: '20px',
     backgroundColor: '#00bcd4',
-    color: 'white'
+    color: 'white',
+    marginTop: '9%',
   }
 };
 
