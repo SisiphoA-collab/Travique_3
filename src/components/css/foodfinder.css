@@ -1,48 +1,302 @@
 .food-finder-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.food-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.food-form input {
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.food-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #246071;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.food-form button:hover {
+  background-color: #1b4a57;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group label {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Map */
+.map-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+}
+
+/* Dish Cards */
+.dish-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.dish-card:hover {
+  transform: scale(1.05);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.dish-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dish-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.dish-card button {
+  background: none;
+  border: none;
+  color: #246071;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.dish-card button:hover {
+  text-decoration: underline;
+}
+
+.dish-card .favorite-btn {
+  color: #f4b400;
+}
+
+/* Favorites Section */
+.favorites-section {
+  margin-top: 2rem;
+}
+
+.favorites-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.favorite-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.favorite-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-card button {
+  background: none;
+  border: none;
+  color: #f4b400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+}
+
+.modal-content button {
+  padding: 0.75rem 1.5rem;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #c9302c;
+}
+
+/* Error and Loading */
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  font-size: 1rem;
+  color: #246071;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .food-finder-container {
     padding: 1rem;
   }
-  
+
   .food-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .food-form input {
-    padding: 0.5rem;
-    width: 70%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
-  .food-form button {
-    padding: 0.5rem 1rem;
-    background-color: #246071;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .meal-info {
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-top: 1rem;
-    text-align: left;
-  }
-  
-  .meal-info img {
     width: 100%;
-    border-radius: 8px;
-    margin-top: 0.5rem;
   }
-  
-  .error {
-    color: red;
+
+  .filter-section {
+    flex-direction: column;
+    gap: 1rem;
   }
-  
+
+  .dish-card img {
+    height: 120px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .modal-content img {
+    height: 150px;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dish-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .dish-card p {
+    font-size: 0.85rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .modal-content p {
+    font-size: 0.85rem;
+  }
+}

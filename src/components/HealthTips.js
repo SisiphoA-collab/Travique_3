@@ -21,6 +21,24 @@ const healthTips = {
     { tip: "Use insect repellent to prevent mosquito bites.", category: "Insect Protection", source: "CDC" },
     { tip: "Carry a list of local hospitals, as public medical care varies.", category: "Emergency Preparedness", source: "CDC" },
   ],
+  EastLondon: [
+    { tip: "Use sunscreen and stay hydrated due to strong UV rays at the coast.", category: "Sun Protection", source: "CDC" },
+    { tip: "Eat at reputable restaurants to avoid foodborne illnesses.", category: "Food Safety", source: "Travel Doctor" },
+    { tip: "Swim in marked areas to avoid strong ocean currents.", category: "Water Safety", source: "BHTP" },
+    { tip: "Be cautious of petty theft at tourist spots like V&A Waterfront.", category: "Personal Safety", source: "Nomadic Matt" },
+  ],
+  Gqeberha: [
+    { tip: "Use sunscreen and stay hydrated due to strong UV rays at the coast.", category: "Sun Protection", source: "CDC" },
+    { tip: "Eat at reputable restaurants to avoid foodborne illnesses.", category: "Food Safety", source: "Travel Doctor" },
+    { tip: "Swim in marked areas to avoid strong ocean currents.", category: "Water Safety", source: "BHTP" },
+    { tip: "Be cautious of petty theft at tourist spots like V&A Waterfront.", category: "Personal Safety", source: "Nomadic Matt" },
+  ],
+  Durban: [
+    { tip: "Use sunscreen and stay hydrated due to strong UV rays at the coast.", category: "Sun Protection", source: "CDC" },
+    { tip: "Eat at reputable restaurants to avoid foodborne illnesses.", category: "Food Safety", source: "Travel Doctor" },
+    { tip: "Swim in marked areas to avoid strong ocean currents.", category: "Water Safety", source: "BHTP" },
+    { tip: "Be cautious of petty theft at tourist spots like V&A Waterfront.", category: "Personal Safety", source: "Nomadic Matt" },
+  ],
   KrugerNationalPark: [
     { tip: "Take malaria prophylaxis if visiting during rainy season (Nov–Mar).", category: "Malaria Prevention", source: "CDC" },
     { tip: "Use insect repellent and wear long sleeves to avoid mosquito bites.", category: "Insect Protection", source: "Travel Doctor" },
@@ -29,7 +47,7 @@ const healthTips = {
   ],
 };
 
-const destinations = ["General", "CapeTown", "Johannesburg", "KrugerNationalPark"];
+const destinations = ["General", "CapeTown", "Johannesburg", "KrugerNationalPark", "EastLondon", "Gqeberha","Durban"];
 
 const HealthTips = () => {
   const [selectedDestination, setSelectedDestination] = useState("General");
