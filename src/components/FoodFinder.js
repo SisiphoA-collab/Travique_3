@@ -20,7 +20,33 @@ const saFoodData = [
   },
   {
     id: 2,
-    name: "Bunny Chow",
+    name: "Ikota (Bunny Chow)",
+    category: "Street Food",
+    region: "KwaZulu-Natal",
+    description: "A hollowed-out loaf of bread filled hot chips,egg,russian,polony,, popular in Durban.",
+    image: "https://via.placeholder.com/150?text=Bunny+Chow",
+    dietary: ["Vegetarian", "Halal"],
+    restaurants: [
+      { name: "Durban Spice", address: "45 Florida Rd, Durban", rating: 4.7, price: "Budget", lat: -29.833, lng: 31.021 },
+      { name: "Curry Corner", address: "12 Grey St, Durban", rating: 4.0, price: "Budget", lat: -29.834, lng: 31.022 }
+    ]
+  },
+  {
+    id: 2,
+    name: "Amagwinya nesindi (umdundu)",
+    category: "Street Food",
+    region: "Eastern Cape",
+    description: "A hollowed-out loaf of bread filled with curry, popular in Durban.",
+    image: "https://via.placeholder.com/150?text=Bunny+Chow",
+    dietary: ["Vegetarian", "Halal"],
+    restaurants: [
+      { name: "Durban Spice", address: "45 Florida Rd, Durban", rating: 4.7, price: "Budget", lat: -29.833, lng: 31.021 },
+      { name: "Curry Corner", address: "12 Grey St, Durban", rating: 4.0, price: "Budget", lat: -29.834, lng: 31.022 }
+    ]
+  },
+  {
+    id: 2,
+    name: "Amanqina (Chicken feet)",
     category: "Street Food",
     region: "KwaZulu-Natal",
     description: "A hollowed-out loaf of bread filled with curry, popular in Durban.",
@@ -33,7 +59,7 @@ const saFoodData = [
   },
   {
     id: 3,
-    name: "Braai",
+    name: "Umbengo (Braaied meat)",
     category: "Barbecue",
     region: "Nationwide",
     description: "A South African barbecue featuring grilled meats like boerewors and sosaties.",

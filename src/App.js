@@ -16,6 +16,7 @@ import TripPlanner from './components/TripPlanner';
 import FoodFinder from './components/FoodFinder';
 import HealthTips from './components/HealthTips';
 import Expenses from './components/Expenses';
+import 'leaflet/dist/leaflet.css';
 
 function ScrollToTop() {
   const location = useLocation();
