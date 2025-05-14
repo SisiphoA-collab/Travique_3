@@ -23,7 +23,7 @@ const saFoodData = [
     name: "Ikota (Bunny Chow)",
     category: "Street Food",
     region: "KwaZulu-Natal",
-    description: "A hollowed-out loaf of bread filled hot chips,egg,russian,polony,, popular in Durban.",
+    description: "A hollowed-out loaf of bread filled hot chips,egg,russian,polony, popular in Durban.",
     image: "https://via.placeholder.com/150?text=Bunny+Chow",
     dietary: ["Vegetarian", "Halal"],
     restaurants: [
