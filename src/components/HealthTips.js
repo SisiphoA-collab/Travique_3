@@ -45,9 +45,33 @@ const healthTips = {
     { tip: "Stay in your vehicle during safaris unless guided.", category: "Wildlife Safety", source: "BHTP" },
     { tip: "Drink bottled water, as tap water may be unsafe in remote areas.", category: "Hydration", source: "CDC" },
   ],
+  NothernCape: [
+    { tip: "Take malaria prophylaxis if visiting during rainy season (Nov–Mar).", category: "Malaria Prevention", source: "CDC" },
+    { tip: "Use insect repellent and wear long sleeves to avoid mosquito bites.", category: "Insect Protection", source: "Travel Doctor" },
+    { tip: "Stay in your vehicle during safaris unless guided.", category: "Wildlife Safety", source: "BHTP" },
+    { tip: "Drink bottled water, as tap water may be unsafe in remote areas.", category: "Hydration", source: "CDC" },
+  ],
+  Bloemfontein: [
+    { tip: "Take malaria prophylaxis if visiting during rainy season (Nov–Mar).", category: "Malaria Prevention", source: "CDC" },
+    { tip: "Use insect repellent and wear long sleeves to avoid mosquito bites.", category: "Insect Protection", source: "Travel Doctor" },
+    { tip: "Stay in your vehicle during safaris unless guided.", category: "Wildlife Safety", source: "BHTP" },
+    { tip: "Drink bottled water, as tap water may be unsafe in remote areas.", category: "Hydration", source: "CDC" },
+  ],
+  Mpumalanga: [
+    { tip: "Take malaria prophylaxis if visiting during rainy season (Nov–Mar).", category: "Malaria Prevention", source: "CDC" },
+    { tip: "Use insect repellent and wear long sleeves to avoid mosquito bites.", category: "Insect Protection", source: "Travel Doctor" },
+    { tip: "Stay in your vehicle during safaris unless guided.", category: "Wildlife Safety", source: "BHTP" },
+    { tip: "Drink bottled water, as tap water may be unsafe in remote areas.", category: "Hydration", source: "CDC" },
+  ],
+  Welkom: [
+    { tip: "Take malaria prophylaxis if visiting during rainy season (Nov–Mar).", category: "Malaria Prevention", source: "CDC" },
+    { tip: "Use insect repellent and wear long sleeves to avoid mosquito bites.", category: "Insect Protection", source: "Travel Doctor" },
+    { tip: "Stay in your vehicle during safaris unless guided.", category: "Wildlife Safety", source: "BHTP" },
+    { tip: "Drink bottled water, as tap water may be unsafe in remote areas.", category: "Hydration", source: "CDC" },
+  ],
 };
 
-const destinations = ["General", "CapeTown", "Johannesburg", "KrugerNationalPark", "EastLondon", "Gqeberha","Durban"];
+const destinations = ["General", "CapeTown", "Johannesburg", "KrugerNationalPark", "EastLondon", "Gqeberha","Durban","Bloemfontein","Mpumalanga","Welkom","NothernCape"];
 
 const HealthTips = () => {
   const [selectedDestination, setSelectedDestination] = useState("General");
